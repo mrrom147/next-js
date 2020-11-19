@@ -1,0 +1,49 @@
+.reputation-list {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+        margin-bottom: rem(15px);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.reputation-item {
+    background-color: $gray-400;
+    border-radius: $border-radius;
+    padding: rem(15px);
+
+    @include media-breakpoint-up('lg') {
+        padding: rem(23px) rem(40px);
+    }
+
+    &__logo {
+        @include media-breakpoint-up('lg') {
+            img {
+                max-width: rem(230px);
+            }
+        }
+    }
+
+    &__action {
+        text-align: center;
+        max-width: rem(130px);
+
+        @include media-breakpoint-up('lg') {
+            max-width: rem(170px);
+        }
+
+        .review-star {
+            @include font-size(15px);
+            margin-bottom: rem(10px);
+
+            @include media-breakpoint-up('lg') {
+                @include font-size(24px);
+                margin-bottom: rem(20px);
+            }
+        }
+    }
+}

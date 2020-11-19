@@ -11,3 +11,5 @@ const Filter = () => (
         </div>
     </Layout>
 )
+
+export default Filter;
